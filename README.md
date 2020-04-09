@@ -22,7 +22,7 @@ Supports:
 
 Current available backends:  
 
-* [dbg-gdb](https://atom.io/packages/dbg-gdb) - Debug with gdb
+* [dbg-gdb-esp32](https://atom.io/packages/dbg-gdb-esp32) - Debug with gdb
 
 *Please install a backend to get started!*
 
