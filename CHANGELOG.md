@@ -11,6 +11,8 @@
 	* Fixed: Error when filtering by keyboard in the config selection modal ([#31 - rwa96](https://github.com/31i73/atom-dbg/issues/31))
 	* Fixed: Keyboard filter for selection modal did not clear from last time
 	* Fixed: dbg would fail if watching the config files for updates failed for an unknown reason. This is now politely reported, instead ([#32 - wknapek](https://github.com/31i73/atom-dbg/issues/27))
+* #### 1.6.4
+	* Fixed: fs.writeFile "Uncaught Callback must be a function" ([#46 - petoknm](https://github.com/31i73/atom-dbg/issues/46))
 
 ## 1.5.0
 * Improved: Now uses Atom 1.17 docks. Sidebars can now be resized, split, dragged or tabbed anywhere within Atom, and by default are docked onto the side of the screen

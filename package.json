@@ -1,13 +1,13 @@
 {
-  "name": "dbg",
+  "name": "dbg2",
   "main": "./lib/main",
-  "version": "1.6.3",
-  "description": "An interactive debugger frontend",
+  "version": "1.6.4",
+  "description": "An interactive debugger frontend v2",
   "keywords": [
     "debug",
     "debugger"
   ],
-  "repository": "https://github.com/31i73/atom-dbg",
+  "repository": "https://github.com/monnoliv/atom-dbg2",
   "license": "MIT",
   "engines": {
     "atom": ">=1.17.0 <2.0.0"
