@@ -1,9 +1,28 @@
 # dbg2 package
 
-This package is the the same as the dbg one but with the bug fs.writeFile corrected in the ConfigManager.coffee
+**This package is the same as the dbg one, but with the bug fs.writeFile corrected in the ConfigManager.coffee**
 
-#### It seems that the 31i73/atom-dbg initial package is no longer maintained
+It seems that the 31i73/atom-dbg initial package is no longer maintained
 
+### Remote debugging example
+Create a file .atom-dbg.cson in your project folder and write your debug configuration, example for the ESP32:
+```
+"ESP32":
+  gdb_executable: 'xtensa-esp32-elf-gdb'
+  gdb_commands: ['target remote localhost:3333',
+                 'set remote hardware-watchpoint-limit 2',
+                 'mon reset halt',
+                 'flushregs',
+                 'thb app_main', 'c'
+                ]
+  path: "./build/YourProgram.elf"
+  cwd: "."
+  ```
+Don't forget to start the gdb server before starting your debugging session, example my gdb server is openOCD, I start it with
+```
+openocd -f board/esp32-wrover-kit-3.3v.cfg
+```
+### -----------------------------------
 An interactive debugger frontend
 
 
