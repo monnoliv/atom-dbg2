@@ -1,6 +1,11 @@
-# dbg package
+# dbg2 package
+
+This package is the the same as the dbg one but with the bug fs.writeFile corrected in the ConfigManager.coffee
+
+#### It seems that the 31i73/atom-dbg initial package is no longer maintained
 
 An interactive debugger frontend
+
 
 ![Debug screenshot](http://i.imgur.com/1Xuvll8.png)
 

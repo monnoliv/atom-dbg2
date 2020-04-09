@@ -146,4 +146,5 @@ class ConfigManager
 
 					data += '\n'
 
-			fs.writeFile filename, data, 'utf8'
+			fs.writeFile filename, data, 'utf8', (error) ->
+							console.error("Error writing file", error) if error
